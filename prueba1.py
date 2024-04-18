@@ -1,15 +1,15 @@
 import math
-
-def calcular_circunferencia(radio):
-    pi = round(math.pi, 6)  # Valor de pi con 6 decimales
-    circunferencia = 2 * pi * radio
-    return circunferencia
-
-def main():
-    radios = [3, 8, 10]
-    for radio in radios:
-        circunferencia = calcular_circunferencia(radio)
-        print(f"Para un radio de {radio}, la circunferencia es: {circunferencia}")
-
-if __name__ == "__main__":
-    main()
+2
+3# Definir el valor de pi en 6 decimales
+4PI = math.pi * 1000000 / 1000000
+5
+6# Definir los radios
+7radios = [3, 8, 10]
+8
+9# Calcular la circunferencia de cada radio
+10circunferencias = [2 * PI * radio for radio in radios]
+11
+12# Mostrar los resultados en la consola a través de un print en español
+13print("Los radios y sus respectivas circunferencias son:")
+14for i in range(len(radios)):
+15    print(f"Radio {radios[i]}: {circunferencias[i]:.2f} cm")
